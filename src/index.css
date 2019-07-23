@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#appRoot{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.navbar-default {
+  background-color:teal;
+  background-image: none;
+  background-repeat: no-repeat;
+  flex: 0 0 auto;
+
+}
+
+ul li a, .navbar-brand{
+  color: white;
+  display: inline-block;
+}
+
+@media (min-width:992px) {
+  .navbar-nav {
+    display: inline; /* this with combination of .nav-item display is required*/
+  }
+}
+
+.nav-item{
+  padding: 0px 10px 0px 10px;/* T, R, B, L*/
+  display: inline-block;  /* to make lists(navbar options) appear horizontally */
+}
+.navbar-toggler{
+  border-color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-brand:hover, .nav-item a:hover{
+  color: black;
+}
+
+.carousel-inner{
+  height: inherit;
+}
+.carousel-inner .carousel-item img{
+  margin: 0 auto 0 auto;
+  display: block;
+  height: 100%;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
+  flex: 0 0 auto;
+}
+
+.carousel-item{
+  width: 100%;
+  height: 100%;
+}
+.carousel{
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.carousel-caption{
+  color: black;
+  background-color: rgba(211, 211, 211, 0.4);
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
