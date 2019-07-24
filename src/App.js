@@ -4,6 +4,8 @@ import Table from "./Table";
 import Form from "./Form";
 import Navbar from "./Navbar";
 import CarouselImageSlider from "./CarouselImageSlider";
+import AdminLogin from "./AdminLogin";
+import FillForm from "./FillForm";
 
 class App extends Component{
 
@@ -38,13 +40,13 @@ class App extends Component{
   render(){
     // const {TableRowList}= this.state;
     return(
-        /*<div className="container">*/
-          /*<Table myRowList={TableRowList} removeRow={this.removeRow}/>*/
-          /*<Form handleSubmit={this.handleSubmit}/>*/
-        /*</div>*/
+        // /*<div className="container">*/
+        //   /*<Table myRowList={TableRowList} removeRow={this.removeRow}/>*/
+        //   /*<Form handleSubmit={this.handleSubmit}/>*/
+        // /*</div>*/
         <div id="appRoot">
             <Navbar id="navRoot"/>
-            <CarouselImageSlider id="carousalRoot"/>
+            <FillForm/>
         </div>
     )
   }
